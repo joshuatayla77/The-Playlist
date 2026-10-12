@@ -1,0 +1,27 @@
+Worked
+
+/find/baby: Matches the route because “baby” contains only letters.
+
+/FIND/songs: Matches the route because routes ignore uppercase and lowercase differences, and “songs” contains only letters.
+
+/: Matches the default route, which leads to Home/Index.
+
+/track/1: Matches the route because 1 is within the allowed range of 1–6.
+
+
+
+
+
+404
+
+/Playlist/Track: 404 
+The Track route overrides the default routing, so this path doesn’t work.
+
+/track/9: 404 
+The number 7 is outside the allowed range of 1–6.
+
+/liner-notes/extra: 404 
+The URL has an extra part that the route doesn’t allow.
+
+/ZYZ: 404 
+No matching controller or action exists for this URL.

@@ -4,3 +4,13 @@
 @{
     <h1>@ViewData["Tunes"]</h1>
 }
+
+@if (ViewBag.Number - 1 > 0)
+{
+    <a asp-controller="Playlist" asp-action="Track" asp-route-number="@(ViewBag.Number - 1)">Previous</a>
+
+}
+@if (ViewBag.Number + 1 < 6)
+{
+    <a asp-controller="Playlist" asp-action="Track" asp-route-number="@(ViewBag.Number + 1)">Next</a>
+}
